@@ -209,10 +209,10 @@ class Option:
             pass
         # save
         else:
-            textsurface = pygame.Surface((self.screen.get_width() / 2.5, self.screen.get_height() / 12))
+            textsurface = pygame.Surface((self.screen.get_width() / 2.5, self.screen.get_height() / 16))
             textsurface.fill((1, 47, 43))
             text, pos = Text.set_text("Sauvegarde", textsurface.get_width() / 2, textsurface.get_height() / 2,
-                                       32,
+                                       28,
                                        (255, 255, 255), "center")
             textsurface.blit(text, pos)
             self.full_background.blit(textsurface,(self.screen.get_width() / 2 - textsurface.get_width() / 2, self.screen.get_height() / 5))
